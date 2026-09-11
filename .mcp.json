@@ -1,0 +1,12 @@
+{
+    "mcpServers": {
+        "magento-bricklayer": {
+            "command": "ddev",
+            "args": [
+                "exec",
+                "php",
+                "vendor/bin/bricklayer-mcp"
+            ]
+        }
+    }
+}

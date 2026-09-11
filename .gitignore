@@ -1,0 +1,162 @@
+# =============================================================================
+# Mage-OS (Magento 2.4.9) - composer-based project (mage-os/project-minimal-edition)
+#
+# Strategy: everything deployed by composer / mage-os/magento2-base is ignored.
+# Only project-owned code and config is versioned:
+#   composer.json, composer.lock, app/code, app/design, app/i18n,
+#   app/etc/config.php, .ddev, tooling configs (.bricklayer*, .mcp.json, CLAUDE.md)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Composer
+# -----------------------------------------------------------------------------
+/vendor/
+/auth.json
+/.composer/
+
+# -----------------------------------------------------------------------------
+# Magento core files deployed to root by mage-os/magento2-base (magento-force: override)
+# Restored by `composer install` - do not version.
+# -----------------------------------------------------------------------------
+/bin/
+/dev/
+/lib/
+/phpserver/
+/setup/
+/app/autoload.php
+/app/bootstrap.php
+/app/.htaccess
+/app/etc/db_schema.xml
+/app/etc/di.xml
+/app/etc/NonComposerComponentRegistration.php
+/app/etc/registration_globlist.php
+/app/etc/vendor_path.php
+/app/code/Magento/
+/app/design/adminhtml/Magento/
+/app/design/frontend/Magento/
+/app/i18n/Magento/
+/pub/cron.php
+/pub/get.php
+/pub/health_check.php
+/pub/index.php
+/pub/static.php
+/pub/.htaccess
+/pub/.user.ini
+/pub/errors/
+/pub/opt/
+/.editorconfig
+/.htaccess
+/.htaccess.sample
+/.php-cs-fixer.dist.php
+/.user.ini
+/auth.json.sample
+/CHANGELOG.md
+/CODEOWNERS
+/COPYING.txt
+/grunt-config.json.sample
+/Gruntfile.js.sample
+/LICENSE.txt
+/LICENSE_AFL.txt
+/nginx.conf.sample
+/package.json.sample
+/README.md
+/SECURITY.md
+/supported-services.json
+
+# -----------------------------------------------------------------------------
+# Environment / instance-specific config
+# config.php IS versioned (module + store config state, pipeline deployment).
+# -----------------------------------------------------------------------------
+/app/etc/env.php
+/app/etc/config.local.php
+/app/etc/config_sandbox
+/app/config_sandbox
+
+# -----------------------------------------------------------------------------
+# Runtime / generated
+# -----------------------------------------------------------------------------
+/var/
+/generated/
+/pub/static/
+/pub/media/*
+!/pub/media/.htaccess
+/pub/robots.txt
+/pub/sitemap.xml
+/pub/sitemap/
+/robots.txt
+/sitemap.xml
+/sitemap/
+
+# -----------------------------------------------------------------------------
+# Frontend build / tooling
+# -----------------------------------------------------------------------------
+/node_modules/
+/.grunt/
+/Gruntfile.js
+/grunt-config.json
+/package.json
+/package-lock.json
+/yarn.lock
+/pnpm-lock.yaml
+/.sass-cache/
+/.php_cs
+/.php_cs.cache
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+/.phpunit.result.cache
+/.phpunit.cache/
+/phpstan.neon
+/.phplint-cache
+/allure-results/
+/dev/tests/acceptance/tests/_output/
+
+# -----------------------------------------------------------------------------
+# Deployment / secrets / local overrides
+# -----------------------------------------------------------------------------
+/.env
+/.env.*
+!/.env.example
+/php.ini
+/.htpasswd
+/.user.ini.local
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+*.log
+
+# -----------------------------------------------------------------------------
+# DDEV (has its own .ddev/.gitignore for generated files)
+# -----------------------------------------------------------------------------
+/.ddev/.ddev-docker-compose-*.yaml
+/.ddev/db_snapshots/
+/.ddev/.dbimageBuild/
+/.ddev/.webimageBuild/
+/.ddev/.homeadditions/
+/.ddev/traefik/
+
+# -----------------------------------------------------------------------------
+# IDE / editors / OS
+# -----------------------------------------------------------------------------
+/.idea/
+/.vscode/
+/.fleet/
+/.buildpath
+/.cache
+/.metadata
+/.project
+/.settings
+/nbproject/
+atlassian*
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------------
+# AI tooling - local state (project-shared config stays versioned:
+# CLAUDE.md, .mcp.json, .bricklayer.json, .bricklayer/)
+# -----------------------------------------------------------------------------
+/.claude
+.bricklayer.json
