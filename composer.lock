@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15dfd3f771dea9eb2780d99ec7e0a1ef",
+    "content-hash": "c6d83dd77f3a264daddbf6f7cbfd9734",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2397,6 +2397,45 @@
             ],
             "description": "Choova Theme",
             "time": "2026-09-11T11:09:47+00:00"
+        },
+        {
+            "name": "inchoo/language-hr_hr",
+            "version": "1.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/m2-croatian-translate.git",
+                "reference": "7bb1d271b0fe438a2025842cb0675bdf1f13cc1b"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoo/language-hr_hr/inchoo-language-hr_hr-1.2.8-b0025f.tar",
+                "reference": "7bb1d271b0fe438a2025842cb0675bdf1f13cc1b"
+            },
+            "require": {
+                "magento/framework": "~100.0.0||~101.0.0||~102.0.0||~103.0.0"
+            },
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Inchoo team",
+                    "email": "inquire@inchoo.net",
+                    "homepage": "http://inchoo.net/"
+                }
+            ],
+            "description": "Croatian (Hrvatski) language pack for Magento2",
+            "keywords": [
+                "magento2",
+                "translation"
+            ],
+            "time": "2026-03-09T12:30:27+00:00"
         },
         {
             "name": "inchoo/module-layout-reset",
