@@ -17,6 +17,9 @@
         },
         {
             "src": "vendor/inchoodev/module-company-requisition-list-sharing"
+        },
+        {
+            "src": "vendor/hyva-themes/magento2-smile-elasticsuite/src"
         }
     ]
 }

@@ -121,6 +121,7 @@ return [
         'Hyva_GraphqlTokens' => 1,
         'Hyva_GraphqlViewModel' => 1,
         'Hyva_OrderCancellationWebapi' => 1,
+        'Smile_ElasticsuiteCore' => 1,
         'Hyva_BaseLayoutReset' => 1,
         'InchooDev_VatValidation' => 1,
         'InchooDev_QuoteRequest' => 1,
@@ -132,6 +133,18 @@ return [
         'InchooDev_SharedCatalog' => 1,
         'InchooDev_HyvaThemeCompany' => 1,
         'MageOS_ThemeAdminhtmlSwitcher' => 1,
-        'InchooDev_CompanyRequisitionListSharing' => 1
+        'InchooDev_CompanyRequisitionListSharing' => 1,
+        'Smile_ElasticsuiteAdminNotification' => 1,
+        'Smile_ElasticsuiteCatalog' => 1,
+        'Smile_ElasticsuiteSwatches' => 1,
+        'Smile_ElasticsuiteCatalogGraphQl' => 1,
+        'Smile_ElasticsuiteCatalogRule' => 1,
+        'Smile_ElasticsuiteCatalogOptimizer' => 1,
+        'Smile_ElasticsuiteTracker' => 1,
+        'Smile_ElasticsuiteThesaurus' => 1,
+        'Hyva_SmileElasticsuite' => 1,
+        'Smile_ElasticsuiteIndices' => 1,
+        'Smile_ElasticsuiteAnalytics' => 1,
+        'Smile_ElasticsuiteVirtualCategory' => 1
     ]
 ];
