@@ -17,8 +17,12 @@
     "sort-packages": true
   },
   "require": {
+    "hyva-themes/magento2-default-theme-csp": "^1.5",
     "mage-os/product-minimal-edition": "3.5.0",
     "mage-os/theme-adminhtml-m137": "^1.3"
+  },
+  "replace": {
+    "hyva-themes/magento2-mollie-theme-bundle": "*"
   },
   "require-dev": {
     "allure-framework/allure-phpunit": "^3.2",
@@ -77,6 +81,11 @@
     "magento-force": "override"
   },
   "repositories": [
+    {
+      "name": "private-packagist",
+      "type": "composer",
+      "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf"
+    },
     {
       "type": "composer",
       "url": "https://repo.mage-os.org/"

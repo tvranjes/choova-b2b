@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f31dcaa79e1031835f918b4a4eb2a142",
+    "content-hash": "d0570564c82c04d4893ca2e15e8025f7",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1823,6 +1823,362 @@
                 }
             ],
             "time": "2026-08-24T09:13:11+00:00"
+        },
+        {
+            "name": "hyva-themes/magento2-base-layout-reset",
+            "version": "2.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-base-layout-reset/2.0.5.0/f39cf05a0e69c4ece318703c567a91d585ad89f7.zip",
+                "reference": "f39cf05a0e69c4ece318703c567a91d585ad89f7",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "hyva-themes/magento2-theme-module": ">1.3.17",
+                "magento/framework": "*",
+                "magento/module-theme": ">=1.0.2",
+                "php": ">=7.4.0",
+                "psr/log": "^1 || ^2 || ^3"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\BaseLayoutReset\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Hyva Themes Magento base layout reset generation",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-base-layout-reset/-/tree/2.0.5",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-base-layout-reset/-/issues"
+            },
+            "time": "2026-06-08T16:59:52+02:00"
+        },
+        {
+            "name": "hyva-themes/magento2-default-theme-csp",
+            "version": "1.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-default-theme-csp/1.5.2.0/8488ed20744ad723d6452633515d696749dd067b.zip",
+                "reference": "8488ed20744ad723d6452633515d696749dd067b",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyva-themes/magento2-base-layout-reset": "^2.0.1",
+                "hyva-themes/magento2-email-module": "*",
+                "hyva-themes/magento2-graphql-tokens": "*",
+                "hyva-themes/magento2-graphql-view-model": ">=1.0.1",
+                "hyva-themes/magento2-order-cancellation-webapi": "^1.0.0",
+                "hyva-themes/magento2-theme-module": ">=1.5.2",
+                "magento/framework": ">=102.0.0",
+                "magento/module-catalog-rule-graph-ql": "*",
+                "magento/module-customer-graph-ql": "*",
+                "magento/module-directory-graph-ql": "*",
+                "magento/module-graph-ql": "*",
+                "magento/module-quote-graph-ql": "*",
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "magento/magento-coding-standard": "dev-master",
+                "phpro/grumphp": "dev-master"
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "archive": {
+                "exclude": [
+                    ".gitlab"
+                ]
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Default Hyvä Theme (CSP compatible)",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme-csp/-/tree/1.5.2",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-default-theme-csp/-/issues"
+            },
+            "time": "2026-07-10T14:57:29+02:00"
+        },
+        {
+            "name": "hyva-themes/magento2-email-module",
+            "version": "1.0.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-email-module/1.0.6.0/aa5dc55e5e66cadf578bdb339a5d76b2a5a94097.zip",
+                "reference": "aa5dc55e5e66cadf578bdb339a5d76b2a5a94097",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-email": ">=101.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\Email\\": "src/"
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Hyva Themes email module",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-email-module/-/tree/1.0.6",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-email-module/-/issues"
+            },
+            "time": "2025-11-09T21:32:06+01:00"
+        },
+        {
+            "name": "hyva-themes/magento2-graphql-tokens",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyva-themes/magento2-graphql-tokens.git",
+                "reference": "90134c74388b0f5635d322b70a79fcf97716900e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyva-themes/magento2-graphql-tokens/zipball/90134c74388b0f5635d322b70a79fcf97716900e",
+                "reference": "90134c74388b0f5635d322b70a79fcf97716900e",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-catalog": ">=103.0.0",
+                "magento/module-checkout": ">=100.3.0",
+                "magento/module-customer": ">=102.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\GraphqlTokens\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes BV",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Adds Customer and Cart tokens to CustomerData sections",
+            "support": {
+                "issues": "https://github.com/hyva-themes/magento2-graphql-tokens/issues",
+                "source": "https://github.com/hyva-themes/magento2-graphql-tokens/tree/1.0.4"
+            },
+            "time": "2021-08-23T10:19:57+00:00"
+        },
+        {
+            "name": "hyva-themes/magento2-graphql-view-model",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyva-themes/magento2-graphql-view-model.git",
+                "reference": "4bdb5b5642dfcfb538d60bfac0029cd07714fe17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyva-themes/magento2-graphql-view-model/zipball/4bdb5b5642dfcfb538d60bfac0029cd07714fe17",
+                "reference": "4bdb5b5642dfcfb538d60bfac0029cd07714fe17",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^101.0.0 || ^102.0.0 || ^103.0.0",
+                "php": ">=7.3.0",
+                "webonyx/graphql-php": "^14.0.0 || ^15.0.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\GraphqlViewModel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Provide ability to customize GraphQL queries and mutations for Hyvä themes.",
+            "support": {
+                "issues": "https://github.com/hyva-themes/magento2-graphql-view-model/issues",
+                "source": "https://github.com/hyva-themes/magento2-graphql-view-model/tree/1.0.5"
+            },
+            "time": "2023-03-13T17:01:18+00:00"
+        },
+        {
+            "name": "hyva-themes/magento2-order-cancellation-webapi",
+            "version": "1.0.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-order-cancellation-webapi/1.0.1.0/e3b2e4d74bc2501c926ce5b8f9ac126f523bd07e.zip",
+                "reference": "e3b2e4d74bc2501c926ce5b8f9ac126f523bd07e",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-customer": "*",
+                "magento/module-sales": "*",
+                "magento/module-webapi": "*"
+            },
+            "suggest": {
+                "magento/module-order-cancellation": "^100.4.0-beta3"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\OrderCancellationWebapi\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "REST API for magento/module-order-cancellation.",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-order-cancellation-webapi/-/tree/1.0.1",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-order-cancellation-webapi/-/issues"
+            },
+            "time": "2025-11-04T17:06:08+01:00"
+        },
+        {
+            "name": "hyva-themes/magento2-theme-module",
+            "version": "1.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-theme-module/1.5.2.0/6f602cce4248cc626be0f50076188200e3e5d7d5.zip",
+                "reference": "6f602cce4248cc626be0f50076188200e3e5d7d5",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "hyva-themes/magento2-mollie-theme-bundle": "^1.0.1",
+                "magento/framework": "*",
+                "magento/module-catalog": ">=103.0.0",
+                "magento/module-checkout": ">=100.3.0",
+                "magento/module-cms": ">=103.0.0",
+                "magento/module-customer": ">=102.0.0",
+                "magento/module-quote-graph-ql": "*",
+                "magento/module-sample-data": "*",
+                "magento/module-theme": ">=101.0.0",
+                "magento/module-wishlist": ">=101.0.0"
+            },
+            "require-dev": {
+                "hyva-themes/magento2-default-theme": "*",
+                "tddwizard/magento2-fixtures": "^1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/cli_commands.php",
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\Theme\\": [
+                        "src/",
+                        "tests/src/"
+                    ]
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Hyva Themes companion module",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/tree/1.5.2",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/issues"
+            },
+            "time": "2026-07-10T14:46:41+02:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -5110,6 +5466,85 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-catalog-customer-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-catalog-customer-graph-ql-3.5.0.zip",
+                "shasum": "1c04ed3bc16907e685413a1ab0e06b9e4bb0db19"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-customer": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-catalog-customer-graph-ql": "100.4.8"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogCustomerGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-catalog-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-catalog-graph-ql-3.5.0.zip",
+                "shasum": "9650d797f4d815f1c26c77e31ab05cdcd4b569e5"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-advanced-search": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-inventory": "3.5.0",
+                "mage-os/module-catalog-search": "3.5.0",
+                "mage-os/module-config": "3.5.0",
+                "mage-os/module-directory": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-eav-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-resolver-cache": "3.5.0",
+                "mage-os/module-search": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-catalog-graph-ql": "100.4.9"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql-cache": "3.5.0",
+                "mage-os/module-store-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-catalog-import-export",
             "version": "3.5.0",
             "dist": {
@@ -5261,6 +5696,37 @@
                 ],
                 "psr-4": {
                     "Magento\\CatalogRuleConfigurable\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-catalog-rule-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-catalog-rule-graph-ql-3.5.0.zip",
+                "shasum": "c41ec6c0e2a5467155eb2936fbb4f8cfddd4d205"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog-rule": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-catalog-rule-graph-ql": "100.4.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogRuleGraphQl\\": ""
                 }
             },
             "license": [
@@ -5870,6 +6336,50 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-customer-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-customer-graph-ql-3.5.0.zip",
+                "shasum": "bd23cb96f0f5e6767c7d59c67176e8d4fc02c657"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-authorization": "3.5.0",
+                "mage-os/module-catalog-customer-graph-ql": "3.5.0",
+                "mage-os/module-customer": "3.5.0",
+                "mage-os/module-directory": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-eav-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-cache": "3.5.0",
+                "mage-os/module-graph-ql-resolver-cache": "3.5.0",
+                "mage-os/module-integration": "3.5.0",
+                "mage-os/module-newsletter": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-tax": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-customer-graph-ql": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CustomerGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-deploy",
             "version": "3.5.0",
             "dist": {
@@ -5971,6 +6481,39 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-directory-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-directory-graph-ql-3.5.0.zip",
+                "shasum": "b2b5021310a6f3b79d366d030efd8e83fefa0168"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-directory": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-directory-graph-ql": "100.4.7"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\DirectoryGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-downloadable",
             "version": "3.5.0",
             "dist": {
@@ -6046,6 +6589,40 @@
                 ],
                 "psr-4": {
                     "Magento\\Eav\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-eav-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-eav-graph-ql-3.5.0.zip",
+                "shasum": "c0879d965e7e85366c2ff03411df711ccceefd5c"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-eav-graph-ql": "100.4.6"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\EavGraphQl\\": ""
                 }
             },
             "license": [
@@ -6204,6 +6781,147 @@
                 ],
                 "psr-4": {
                     "Magento\\GiftMessage\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-gift-message-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-gift-message-graph-ql-3.5.0.zip",
+                "shasum": "8740f0bb08035f28c6a1ed8acefe6871a9c4eeba"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-downloadable": "3.5.0",
+                "mage-os/module-gift-message": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-gift-message-graph-ql": "100.4.7"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GiftMessageGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-graph-ql-3.5.0.zip",
+                "shasum": "1a3a80ecb7b7faa51999944b3e6271cfb3fc78e1"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-authorization": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-webapi": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0",
+                "webonyx/graphql-php": "^15.0"
+            },
+            "replace": {
+                "magento/module-graph-ql": "100.4.9"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql-cache": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-graph-ql-cache",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-graph-ql-cache-3.5.0.zip",
+                "shasum": "7e8f2b05eee856a7a2cba9aa760a74701510abbd"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-authorization": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-integration": "3.5.0",
+                "mage-os/module-page-cache": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-graph-ql-cache": "100.4.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQlCache\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-graph-ql-resolver-cache",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-graph-ql-resolver-cache-3.5.0.zip",
+                "shasum": "f6eff01505cd22909a0af9cc74204a62f191212e"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-graph-ql-resolver-cache": "100.4.2"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\GraphQlResolverCache\\": ""
                 }
             },
             "license": [
@@ -7068,6 +7786,58 @@
             "description": "Magento module provides data provider for creating buy request for links of downloadable products"
         },
         {
+            "name": "mage-os/module-quote-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-quote-graph-ql-3.5.0.zip",
+                "shasum": "368a3c0080a6fcee0b64c31bfb6fc4b2afe9f81e"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-catalog-inventory": "3.5.0",
+                "mage-os/module-checkout": "3.5.0",
+                "mage-os/module-customer": "3.5.0",
+                "mage-os/module-customer-graph-ql": "3.5.0",
+                "mage-os/module-directory": "3.5.0",
+                "mage-os/module-downloadable": "3.5.0",
+                "mage-os/module-eav-graph-ql": "3.5.0",
+                "mage-os/module-gift-message": "3.5.0",
+                "mage-os/module-gift-message-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-payment": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-sales-graph-ql": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-quote-graph-ql": "100.4.9"
+            },
+            "suggest": {
+                "mage-os/module-catalog-inventory-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-cache": "3.5.0",
+                "mage-os/module-payment-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\QuoteGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-remote-storage",
             "version": "3.5.0",
             "dist": {
@@ -7359,6 +8129,45 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-sales-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-sales-graph-ql-3.5.0.zip",
+                "shasum": "0432c825eb30f3f7711ef2804fa075f260489989"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-quote-graph-ql": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-shipping": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-tax": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-sales-graph-ql": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SalesGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-sales-rule",
             "version": "3.5.0",
             "dist": {
@@ -7443,6 +8252,40 @@
                 "AFL-3.0"
             ],
             "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-sample-data",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-sample-data-3.5.0.zip",
+                "shasum": "138c928fc8e59199dab95b45944d72af15468367"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-sample-data": "100.4.7"
+            },
+            "suggest": {
+                "mage-os/sample-data-media": "Sample Data version: 3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "cli_commands.php",
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\SampleData\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Sample Data fixtures"
         },
         {
             "name": "mage-os/module-search",
