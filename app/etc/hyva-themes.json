@@ -2,6 +2,21 @@
     "extensions": [
         {
             "src": "vendor/hyva-themes/magento2-theme-module/src"
+        },
+        {
+            "src": "vendor/inchoodev/module-quote-request"
+        },
+        {
+            "src": "vendor/magewirephp/magewire/src"
+        },
+        {
+            "src": "vendor/inchoodev/module-quick-order"
+        },
+        {
+            "src": "vendor/inchoodev/module-requisition-list"
+        },
+        {
+            "src": "vendor/inchoodev/module-company-requisition-list-sharing"
         }
     ]
 }

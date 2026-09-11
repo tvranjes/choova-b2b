@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d0570564c82c04d4893ca2e15e8025f7",
+    "content-hash": "7fc1038065387a4dca3fd6392c1ac938",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2181,6 +2181,366 @@
             "time": "2026-07-10T14:46:41+02:00"
         },
         {
+            "name": "inchoodev/module-company",
+            "version": "1.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_company.git",
+                "reference": "5d06079cc4c0198b50c1250de9903dc8d91d60fc"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company/inchoodev-module-company-1.2.7-70deeb.tar",
+                "reference": "5d06079cc4c0198b50c1250de9903dc8d91d60fc"
+            },
+            "require": {
+                "inchoodev/module-vat-validation": "*",
+                "magento/framework": "*",
+                "magento/module-authorization": "*",
+                "magento/module-backend": "*",
+                "magento/module-captcha": "*",
+                "magento/module-cms": "*",
+                "magento/module-customer": "*",
+                "magento/module-directory": "*",
+                "magento/module-eav": "*",
+                "magento/module-integration": "*",
+                "magento/module-quote": "*",
+                "magento/module-sales": "*",
+                "magento/module-store": "*",
+                "magento/module-theme": "*",
+                "magento/module-ui": "*",
+                "magento/module-user": "*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\Company\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Company module for Magento 2",
+            "time": "2026-09-09T10:43:50+00:00"
+        },
+        {
+            "name": "inchoodev/module-company-quote-request",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companyquoterequest.git",
+                "reference": "b03be6b36d8ef3c902277af6fddbcb5061ac21ad"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-quote-request/inchoodev-module-company-quote-request-1.0.0-5f690c.tar",
+                "reference": "b03be6b36d8ef3c902277af6fddbcb5061ac21ad"
+            },
+            "require": {
+                "inchoodev/module-company": "*",
+                "inchoodev/module-quote-request": "*",
+                "magento/framework": "*",
+                "php": "~8.2.0||~8.3.0||~8.4.0||~8.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\CompanyQuoteRequest\\": ""
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "description": "Adds company-account gating and per-company configuration to InchooDev_QuoteRequest.",
+            "time": "2026-07-02T11:54:17+00:00"
+        },
+        {
+            "name": "inchoodev/module-company-requisition-list-sharing",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companyrequisitionlistsharing.git",
+                "reference": "d99ce0a16862ab6ac74a435baa539e441b445226"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-requisition-list-sharing/inchoodev-module-company-requisition-list-sharing-1.0.1-cc254e.tar",
+                "reference": "d99ce0a16862ab6ac74a435baa539e441b445226"
+            },
+            "require": {
+                "inchoodev/module-company": "*",
+                "inchoodev/module-requisition-list": "*",
+                "magento/framework": "*",
+                "magento/module-customer": "*",
+                "magewirephp/magewire": "*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\CompanyRequisitionListSharing\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "B2B bridge module to share requisition lists with members of the current customer's company",
+            "time": "2026-06-25T10:18:31+00:00"
+        },
+        {
+            "name": "inchoodev/module-hyva-theme-company",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_hyvathemecompany.git",
+                "reference": "9914abdd620f29611492bf066cdba9f36d0aa55c"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-hyva-theme-company/inchoodev-module-hyva-theme-company-1.2.2-241706.tar",
+                "reference": "9914abdd620f29611492bf066cdba9f36d0aa55c"
+            },
+            "require": {
+                "hyva-themes/magento2-theme-module": "*",
+                "inchoodev/module-company": ">=1.2.2",
+                "magento/framework": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\HyvaThemeCompany\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Hyva Theme compatibility module for InchooDev_Company",
+            "time": "2026-04-13T13:13:04+00:00"
+        },
+        {
+            "name": "inchoodev/module-quick-order",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_quickorder.git",
+                "reference": "52e2c7f2e1ca688da9a087dc27546fe376ab6316"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-quick-order/inchoodev-module-quick-order-1.4.0-629515.tar",
+                "reference": "52e2c7f2e1ca688da9a087dc27546fe376ab6316"
+            },
+            "require": {
+                "magewirephp/magewire": "^1",
+                "magewirephp/magewire-requirejs": "^1",
+                "php": ">=8.2"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\QuickOrder\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "developer@inchoo.net",
+                    "homepage": "https://inchoo.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Magewire quick order form for Magento 2",
+            "time": "2026-06-30T11:30:06+00:00"
+        },
+        {
+            "name": "inchoodev/module-quote-request",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_quoterequest.git",
+                "reference": "848659a7c7b7f9d29cabe66cbfe9fce19975b593"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-quote-request/inchoodev-module-quote-request-2.0.0-c92c25.tar",
+                "reference": "848659a7c7b7f9d29cabe66cbfe9fce19975b593"
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-backend": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-customer": "*",
+                "magento/module-quote": "*",
+                "magento/module-sales": "*",
+                "magento/module-sales-rule": "*",
+                "magento/module-store": "*",
+                "magento/module-tax": "*",
+                "magento/module-ui": "*",
+                "magento/module-webapi": "*",
+                "php": "~8.2.0||~8.3.0||~8.4.0||~8.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\QuoteRequest\\": ""
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "description": "Quote request and negotiation for Magento 2",
+            "time": "2026-07-01T05:33:42+00:00"
+        },
+        {
+            "name": "inchoodev/module-requisition-list",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_requisitionlist.git",
+                "reference": "63ca39ee18bfea5e6df09b659bdc0e3ac12d9608"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-requisition-list/inchoodev-module-requisition-list-1.0.0-052aab.tar",
+                "reference": "63ca39ee18bfea5e6df09b659bdc0e3ac12d9608"
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-bundle": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-configurable-product": "*",
+                "magento/module-customer": "*",
+                "magento/module-store": "*",
+                "magewirephp/magewire": "*",
+                "magewirephp/magewire-requirejs": "^1",
+                "php": ">=8.2"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "psr-4": {
+                    "InchooDev\\RequisitionList\\": ""
+                },
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Custom Requisition List module with Magewire-powered frontend, inline product search, and dual-theme support.",
+            "time": "2026-06-23T12:33:44+00:00"
+        },
+        {
+            "name": "inchoodev/module-shared-catalog",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_sharedcatalog.git",
+                "reference": "41021794ccd12c5d17826dd3cb93dad07977aa14"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-shared-catalog/inchoodev-module-shared-catalog-1.0.0-1a05c6.tar",
+                "reference": "41021794ccd12c5d17826dd3cb93dad07977aa14"
+            },
+            "require": {
+                "inchoodev/module-company": "*",
+                "magento/framework": "*",
+                "magento/module-bundle": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-import-export": "*",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-catalog-search": "*",
+                "magento/module-configurable-product": "*",
+                "magento/module-customer": "*",
+                "magento/module-grouped-product": "*",
+                "magento/module-import-export": "*",
+                "magento/module-quote": "*",
+                "magento/module-sitemap": "*",
+                "magento/module-tax": "*",
+                "php": "~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\SharedCatalog\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Shared Catalog module for Magento 2 - per-company curated product assortment and negotiated pricing",
+            "time": "2026-09-10T06:18:16+00:00"
+        },
+        {
+            "name": "inchoodev/module-vat-validation",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_vatvalidation.git",
+                "reference": "aae06e8cd6a4ee5b42ae5e3c338738da170985c6"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-vat-validation/inchoodev-module-vat-validation-1.0.0-c345ab.tar",
+                "reference": "aae06e8cd6a4ee5b42ae5e3c338738da170985c6"
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-customer": "*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\VatValidation\\": ""
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "developer@inchoo.net",
+                    "homepage": "https://inchoo.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "VAT ID validation functionality for Magento 2",
+            "time": "2026-02-24T08:04:58+00:00"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "6.12.0",
             "source": {
@@ -2968,6 +3328,68 @@
                 }
             ],
             "time": "2026-05-18T16:10:02+00:00"
+        },
+        {
+            "name": "laminas/laminas-json",
+            "version": "3.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-json.git",
+                "reference": "5448d357c4520d79f5caf4d46a1fe03ec8b8e4b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-json/zipball/5448d357c4520d79f5caf4d46a1fe03ec8b8e4b0",
+                "reference": "5448d357c4520d79f5caf4d46a1fe03ec8b8e4b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1.0"
+            },
+            "conflict": {
+                "zendframework/zend-json": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "laminas/laminas-stdlib": "^2.7.7 || ^3.19",
+                "phpunit/phpunit": "^9.5.25"
+            },
+            "suggest": {
+                "laminas/laminas-json-server": "For implementing JSON-RPC servers",
+                "laminas/laminas-xml2json": "For converting XML documents to JSON"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Json\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "provides convenience methods for serializing native PHP to JSON and decoding JSON to native PHP",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "json",
+                "laminas"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-json/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-json/issues",
+                "rss": "https://github.com/laminas/laminas-json/releases.atom",
+                "source": "https://github.com/laminas/laminas-json"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "abandoned": true,
+            "time": "2026-01-23T11:10:11+00:00"
         },
         {
             "name": "laminas/laminas-loader",
@@ -3854,6 +4276,108 @@
                 }
             ],
             "time": "2025-10-13T14:40:30+00:00"
+        },
+        {
+            "name": "laminas/laminas-view",
+            "version": "2.44.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-view.git",
+                "reference": "93f5c8b52af2603f1aa494f1c98ce2013baff18e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-view/zipball/93f5c8b52af2603f1aa494f1c98ce2013baff18e",
+                "reference": "93f5c8b52af2603f1aa494f1c98ce2013baff18e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-filter": "*",
+                "ext-json": "*",
+                "laminas/laminas-escaper": "^2.5",
+                "laminas/laminas-eventmanager": "^3.4",
+                "laminas/laminas-json": "^3.3",
+                "laminas/laminas-servicemanager": "^3.21.0",
+                "laminas/laminas-stdlib": "^3.10.1",
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "psr/container": "^1 || ^2"
+            },
+            "conflict": {
+                "amphp/dns": "<2.1.2",
+                "amphp/socket": "<2.3.1",
+                "container-interop/container-interop": "<1.2",
+                "laminas/laminas-router": "<3.0.1",
+                "laminas/laminas-session": "<2.12",
+                "zendframework/zend-view": "*"
+            },
+            "require-dev": {
+                "laminas/laminas-authentication": "^2.18",
+                "laminas/laminas-coding-standard": "~3.1.0",
+                "laminas/laminas-feed": "^2.25.0",
+                "laminas/laminas-filter": "^2.41",
+                "laminas/laminas-http": "^2.22",
+                "laminas/laminas-i18n": "^2.30.0",
+                "laminas/laminas-modulemanager": "^2.18",
+                "laminas/laminas-mvc": "^3.8.0",
+                "laminas/laminas-mvc-i18n": "^1.9",
+                "laminas/laminas-mvc-plugin-flashmessenger": "^1.11.0",
+                "laminas/laminas-navigation": "^2.21.0",
+                "laminas/laminas-paginator": "^2.20.0",
+                "laminas/laminas-permissions-acl": "^2.17",
+                "laminas/laminas-router": "^3.14.0",
+                "laminas/laminas-uri": "^2.13",
+                "phpunit/phpunit": "^10.5.58",
+                "psalm/plugin-phpunit": "^0.19.5",
+                "vimeo/psalm": "^6.13.1"
+            },
+            "suggest": {
+                "laminas/laminas-authentication": "Laminas\\Authentication component",
+                "laminas/laminas-feed": "Laminas\\Feed component",
+                "laminas/laminas-filter": "Laminas\\Filter component",
+                "laminas/laminas-http": "Laminas\\Http component",
+                "laminas/laminas-i18n": "Laminas\\I18n component",
+                "laminas/laminas-mvc": "Laminas\\Mvc component",
+                "laminas/laminas-mvc-plugin-flashmessenger": "laminas-mvc-plugin-flashmessenger component, if you want to use the FlashMessenger view helper with laminas-mvc versions 3 and up",
+                "laminas/laminas-navigation": "Laminas\\Navigation component",
+                "laminas/laminas-paginator": "Laminas\\Paginator component",
+                "laminas/laminas-permissions-acl": "Laminas\\Permissions\\Acl component",
+                "laminas/laminas-uri": "Laminas\\Uri component"
+            },
+            "bin": [
+                "bin/templatemap_generator.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\View\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Flexible view layer supporting and providing multiple view layers, helpers, and more",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "view"
+            ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-view/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-view/issues",
+                "rss": "https://github.com/laminas/laminas-view/releases.atom",
+                "source": "https://github.com/laminas/laminas-view"
+            },
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2025-11-17T01:59:08+00:00"
         },
         {
             "name": "league/flysystem",
@@ -8003,6 +8527,40 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-robots",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-robots-3.5.0.zip",
+                "shasum": "d73c783b012dd31f28c267b6264988a90e27b69e"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-robots": "101.1.5"
+            },
+            "suggest": {
+                "mage-os/module-theme": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\Robots\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-rss",
             "version": "3.5.0",
             "dist": {
@@ -8409,6 +8967,49 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-sitemap",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-sitemap-3.5.0.zip",
+                "shasum": "da18bd8e987f3c57fa72dd08684c55a428b9522f"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-backend": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-url-rewrite": "3.5.0",
+                "mage-os/module-cms": "3.5.0",
+                "mage-os/module-config": "3.5.0",
+                "mage-os/module-cron": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-media-storage": "3.5.0",
+                "mage-os/module-robots": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-sitemap": "100.4.8"
+            },
+            "suggest": {
+                "mage-os/module-config": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\Sitemap\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-store",
             "version": "3.5.0",
             "dist": {
@@ -8441,6 +9042,40 @@
                 ],
                 "psr-4": {
                     "Magento\\Store\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-store-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-store-graph-ql-3.5.0.zip",
+                "shasum": "4c17dee262f24ff93c94b1ba61ccd2e49a58e421"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-cache": "3.5.0",
+                "mage-os/module-graph-ql-resolver-cache": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-store-graph-ql": "100.4.7"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\StoreGraphQl\\": ""
                 }
             },
             "license": [
@@ -9609,6 +10244,100 @@
                 "zend",
                 "zf1"
             ]
+        },
+        {
+            "name": "magewirephp/magewire",
+            "version": "1.13.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magewirephp/magewire.git",
+                "reference": "dc1c62b2300677ebded6160da423d59f8f806b93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magewirephp/magewire/zipball/dc1c62b2300677ebded6160da423d59f8f806b93",
+                "reference": "dc1c62b2300677ebded6160da423d59f8f806b93",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "magewirephp/validation": "^1.0",
+                "php": ">=8.1",
+                "symfony/http-foundation": "^5.4 || ^6.0 || ^7.0 || ^8.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Magewirephp\\Magewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Willem Poortman",
+                    "role": "Founder / Developer"
+                }
+            ],
+            "description": "A framework that makes building dynamic interfaces simple, without leaving the comfort of Magento 2",
+            "support": {
+                "issues": "https://github.com/magewirephp/magewire/discussions",
+                "source": "https://github.com/magewirephp/magewire/tree/1.13.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/wpoortman",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-01-09T13:27:17+00:00"
+        },
+        {
+            "name": "magewirephp/validation",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/magewirephp/validation.git",
+                "reference": "4d3728165a2618b02a449576ee9d13497e942c5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magewirephp/validation/zipball/4d3728165a2618b02a449576ee9d13497e942c5b",
+                "reference": "4d3728165a2618b02a449576ee9d13497e942c5b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=8.1 <8.6"
+            },
+            "replace": {
+                "rakit/validation": "*"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^9.5 || ^10.0",
+                "squizlabs/php_codesniffer": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rakit\\Validation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP Laravel like standalone validation library (forked from rakit/validation)",
+            "support": {
+                "source": "https://github.com/magewirephp/validation/tree/1.0.1"
+            },
+            "time": "2026-05-12T10:23:15+00:00"
         },
         {
             "name": "marc-mabe/php-enum",
