@@ -17,8 +17,8 @@
     "sort-packages": true
   },
   "require": {
-    "hyva-themes/magento2-default-theme-csp": "^1.5",
     "hyva-themes/magento2-smile-elasticsuite": "^1.2",
+    "inchoo/choova-theme": "^0.1.0",
     "inchoodev/module-company-quote-request": "^1.0",
     "inchoodev/module-company-requisition-list-sharing": "^1.0",
     "inchoodev/module-hyva-theme-company": "^1.2",
@@ -30,6 +30,7 @@
     "mage-os/module-configurable-product-graph-ql": "^3.5",
     "mage-os/module-downloadable-graph-ql": "^3.5",
     "mage-os/module-newsletter-graph-ql": "^3.5",
+    "mage-os/module-page-builder": "^3.5",
     "mage-os/module-review-graph-ql": "^3.5",
     "mage-os/module-store-graph-ql": "^3.5",
     "mage-os/module-url-rewrite-graph-ql": "^3.5",

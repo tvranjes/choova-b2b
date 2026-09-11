@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa47d538be78db3790dbda7e036179e9",
+    "content-hash": "3fbd8d6a18345798aeacf8387196ab2e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1877,6 +1877,51 @@
             "time": "2026-06-08T16:59:52+02:00"
         },
         {
+            "name": "hyva-themes/magento2-cms-tailwind-jit",
+            "version": "2.0.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-cms-tailwind-jit/2.0.3.0/1cceff288e04c90ce251649c3b44ee3236f48850.zip",
+                "reference": "1cceff288e04c90ce251649c3b44ee3236f48850",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "hyva-themes/magento2-theme-module": ">=1.3.11",
+                "php": "^7.4.0||>=8.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\CmsTailwindJit\\": "src/"
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes B.V.",
+                    "email": "info@hyva.io"
+                }
+            ],
+            "description": "Automatic TailwindCSS classes for CMS content in Hyvä Themes.",
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-cms-tailwind-jit/-/tree/2.0.3",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-cms-tailwind-jit/-/issues"
+            },
+            "time": "2026-07-31T12:03:54+02:00"
+        },
+        {
             "name": "hyva-themes/magento2-default-theme-csp",
             "version": "1.5.2",
             "dist": {
@@ -2120,6 +2165,56 @@
             "time": "2025-11-04T17:06:08+01:00"
         },
         {
+            "name": "hyva-themes/magento2-payment-icons",
+            "version": "2.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/hyva-themes/magento2-payment-icons/2.0.2.0/0d317b08a5b621e835d925711ae4d2f28ad1d0e9.zip",
+                "reference": "0d317b08a5b621e835d925711ae4d2f28ad1d0e9",
+                "mirrors": [
+                    {
+                        "url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyva-themes/magento2-theme-module": ">=1.1.12"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Hyva\\PaymentIcons\\": "src/"
+                }
+            },
+            "notification-url": "https://hyva-themes.repo.packagist.com/hootify-store-y3fflf/downloads/",
+            "license": [
+                "See LICENSE.md or https://hyva.io/license"
+            ],
+            "authors": [
+                {
+                    "name": "Hyvä Themes BV",
+                    "email": "info@hyva.io",
+                    "homepage": "https://www.hyva.io/"
+                }
+            ],
+            "description": "Enables the usage of light-, dark- & mono- payment SVG icons",
+            "keywords": [
+                "magento2",
+                "magento2-hyva",
+                "magento2-module",
+                "paymenticons"
+            ],
+            "support": {
+                "source": "https://gitlab.hyva.io/hyva-themes/magento2-payment-icons/-/tree/2.0.2",
+                "issues": "https://gitlab.hyva.io/hyva-themes/magento2-payment-icons/-/issues"
+            },
+            "time": "2026-04-08T15:52:50+02:00"
+        },
+        {
             "name": "hyva-themes/magento2-smile-elasticsuite",
             "version": "1.2.8",
             "dist": {
@@ -2227,6 +2322,128 @@
                 "issues": "https://gitlab.hyva.io/hyva-themes/magento2-theme-module/-/issues"
             },
             "time": "2026-07-10T14:46:41+02:00"
+        },
+        {
+            "name": "inchoo/choova-theme",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/inchoo-hyva-library-choova/choova-theme.git",
+                "reference": "6e092ac1942f5102c79026e202511d6d0bef403c"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoo/choova-theme/inchoo-choova-theme-0.1.0-ba6aba.tar",
+                "reference": "6e092ac1942f5102c79026e202511d6d0bef403c"
+            },
+            "require": {
+                "hyva-themes/magento2-cms-tailwind-jit": "2.0.3",
+                "hyva-themes/magento2-default-theme-csp": "1.5.2",
+                "hyva-themes/magento2-payment-icons": "2.0.2",
+                "inchoo/module-layout-reset": "0.1.0",
+                "inchoo/module-theme-studio": "0.1.0"
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "web@inchoo.net"
+                }
+            ],
+            "description": "Choova Theme",
+            "time": "2026-09-11T11:09:47+00:00"
+        },
+        {
+            "name": "inchoo/module-layout-reset",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/inchoo-hyva-library-choova/module-layout-reset.git",
+                "reference": "2e4d1f371bc8ea348ce79a717ad74fb46d9d07a4"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoo/module-layout-reset/inchoo-module-layout-reset-0.1.0-3847b9.tar",
+                "reference": "2e4d1f371bc8ea348ce79a717ad74fb46d9d07a4"
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "hyva-themes/magento2-base-layout-reset": ">=2.0.1 <3",
+                "hyva-themes/magento2-graphql-view-model": ">=1.0.1 <2",
+                "hyva-themes/magento2-order-cancellation-webapi": ">=1.0.0 <2",
+                "hyva-themes/magento2-theme-module": ">=1.5.1 <2",
+                "magento/framework": ">=103.0 <104",
+                "magento/module-backend": ">=102.0 <103",
+                "magento/module-config": ">=101.2 <102",
+                "magento/module-store": ">=101.1 <102",
+                "magento/module-theme": ">=101.1 <102",
+                "php": ">=8.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Inchoo\\LayoutReset\\": ""
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "description": "Register Hyvä base themes from the admin instead of editing di.xml",
+            "time": "2026-09-04T07:10:40+00:00"
+        },
+        {
+            "name": "inchoo/module-theme-studio",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/inchoo-hyva-library-choova/module-theme-studio.git",
+                "reference": "42b18b9712026d5954ae6978db50deca89165063"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoo/module-theme-studio/inchoo-module-theme-studio-0.1.0-936816.tar",
+                "reference": "42b18b9712026d5954ae6978db50deca89165063"
+            },
+            "require": {
+                "hyva-themes/magento2-theme-module": ">=1.5.1 <2",
+                "magento/framework": ">=103.0 <104",
+                "magento/module-backend": ">=102.0 <103",
+                "magento/module-config": ">=101.2 <102",
+                "magento/module-store": ">=101.1 <102",
+                "magento/module-theme": ">=101.1 <102",
+                "php": ">=8.1"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Inchoo\\ThemeStudio\\": ""
+                }
+            },
+            "license": [
+                "Proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "backend@inchoo.net",
+                    "homepage": "https://inchoo.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Theme Studio for Hyvä Themes",
+            "time": "2026-09-08T05:49:22+00:00"
         },
         {
             "name": "inchoodev/module-company",
@@ -6472,6 +6689,45 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-catalog-widget",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-catalog-widget-3.5.0.zip",
+                "shasum": "2fdd74c926070ca6edfbe60705b615c34205da0c"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-backend": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-customer": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-rule": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-theme": "3.5.0",
+                "mage-os/module-widget": "3.5.0",
+                "mage-os/module-wishlist": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-catalog-widget": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogWidget\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-checkout",
             "version": "3.5.0",
             "dist": {
@@ -8293,6 +8549,57 @@
                 "AFL-3.0"
             ],
             "description": "Magento module that implements order cancellation UI."
+        },
+        {
+            "name": "mage-os/module-page-builder",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-page-builder-3.5.0.zip",
+                "shasum": "19fbc01ddc95f38fcb7c074143ae992ea3d1eeed"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-backend": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-inventory": "3.5.0",
+                "mage-os/module-catalog-widget": "3.5.0",
+                "mage-os/module-cms": "3.5.0",
+                "mage-os/module-config": "3.5.0",
+                "mage-os/module-directory": "3.5.0",
+                "mage-os/module-eav": "3.5.0",
+                "mage-os/module-email": "3.5.0",
+                "mage-os/module-media-storage": "3.5.0",
+                "mage-os/module-require-js": "3.5.0",
+                "mage-os/module-rule": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-theme": "3.5.0",
+                "mage-os/module-ui": "3.5.0",
+                "mage-os/module-variable": "3.5.0",
+                "mage-os/module-widget": "3.5.0",
+                "mage-os/module-wishlist": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0",
+                "phpgt/dom": "^4.1"
+            },
+            "replace": {
+                "magento/module-page-builder": "2.2.7"
+            },
+            "suggest": {
+                "mage-os/module-review": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\PageBuilder\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "Page Builder module"
         },
         {
             "name": "mage-os/module-page-cache",
@@ -11743,6 +12050,215 @@
                 "source": "https://github.com/php-http/promise/tree/1.3.1"
             },
             "time": "2024-03-15T13:55:21+00:00"
+        },
+        {
+            "name": "phpgt/cssxpath",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpgt/CssXPath.git",
+                "reference": "577781742ff61742332740d50f35f2b6cc037e2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpgt/CssXPath/zipball/577781742ff61742332740d50f35f2b6cc037e2a",
+                "reference": "577781742ff61742332740d50f35f2b6cc037e2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "phpmd/phpmd": "^2.15",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^10.5",
+                "squizlabs/php_codesniffer": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gt\\CssXPath\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Convert CSS selectors to XPath queries.",
+            "support": {
+                "issues": "https://github.com/phpgt/CssXPath/issues",
+                "source": "https://github.com/phpgt/CssXPath/tree/v1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-03-16T12:14:14+00:00"
+        },
+        {
+            "name": "phpgt/dom",
+            "version": "v4.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpgt/Dom.git",
+                "reference": "830f0809c8ca1abf5f11d3d997f735aa00f553b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpgt/Dom/zipball/830f0809c8ca1abf5f11d3d997f735aa00f553b8",
+                "reference": "830f0809c8ca1abf5f11d3d997f735aa00f553b8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "php": ">=8.1",
+                "phpgt/cssxpath": "^1.1",
+                "phpgt/propfunc": "^1.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.13",
+                "phpstan/phpstan": "^1.9",
+                "phpunit/phpunit": "^10.4",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GT\\Dom\\": "./src",
+                    "Gt\\Dom\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg.bowler@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alvaro Guimaraes",
+                    "homepage": "https://github.com/aguimaraes",
+                    "role": "Developer"
+                },
+                {
+                    "name": "James Fellows",
+                    "homepage": "https://github.com/j4m3s",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Emile Ward",
+                    "homepage": "https://github.com/emileward",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jelmer Wijnja",
+                    "homepage": "https://github.com/Jelmergu",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ognjen Petrovic",
+                    "homepage": "https://github.com/ognjen-petrovic",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jacob Bearden",
+                    "homepage": "https://github.com/jacobbearden",
+                    "role": "Documentation contributor"
+                },
+                {
+                    "name": "Jaroslav Týc",
+                    "homepage": "https://www.jaroslavtyc.com/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andrii Beziazychnyi",
+                    "homepage": "https://www.atwix.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Modern DOM API.",
+            "support": {
+                "issues": "https://github.com/phpgt/Dom/issues",
+                "source": "https://github.com/phpgt/Dom/tree/v4.2.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-05-13T16:30:26+00:00"
+        },
+        {
+            "name": "phpgt/propfunc",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhpGt/PropFunc.git",
+                "reference": "091213649e89ff22d1ef640b46fbee5215c65520"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhpGt/PropFunc/zipball/091213649e89ff22d1ef640b46fbee5215c65520",
+                "reference": "091213649e89ff22d1ef640b46fbee5215c65520",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": ">=0.12",
+                "phpunit/phpunit": ">=9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gt\\PropFunc\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Bowler",
+                    "email": "greg.bowler@g105b.com",
+                    "homepage": "https://www.g105b.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Property accessor and mutator functions.",
+            "support": {
+                "issues": "https://github.com/PhpGt/PropFunc/issues",
+                "source": "https://github.com/PhpGt/PropFunc/tree/v1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/PhpGt",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-23T12:46:44+00:00"
         },
         {
             "name": "phpseclib/mcrypt_compat",
