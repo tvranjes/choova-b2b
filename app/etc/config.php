@@ -118,6 +118,7 @@ return [
         'Magento_PageBuilder' => 1,
         'Magento_Wishlist' => 1,
         'Magento_WishlistGraphQl' => 1,
+        'Creatuity_Interception' => 1,
         'Hyva_Theme' => 1,
         'Hyva_CmsTailwindJit' => 1,
         'Hyva_Email' => 1,

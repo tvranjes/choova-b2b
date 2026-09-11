@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fbd8d6a18345798aeacf8387196ab2e",
+    "content-hash": "e3994f6fbd22e4b0a2b8b129fb8a6d31",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1061,6 +1061,46 @@
                 }
             ],
             "time": "2024-05-06T16:37:16+00:00"
+        },
+        {
+            "name": "creatuity/magento2-interceptors",
+            "version": "1.3.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creatuity/magento2-interceptors.git",
+                "reference": "0869a198fee9a1de39b034d1f187f30a15e0ea9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/creatuity/magento2-interceptors/zipball/0869a198fee9a1de39b034d1f187f30a15e0ea9d",
+                "reference": "0869a198fee9a1de39b034d1f187f30a15e0ea9d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Creatuity\\Interception\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Creatuity Corp",
+                    "homepage": "http://creatuity.com/"
+                }
+            ],
+            "description": "Creatuity Compiled Interceptors Module",
+            "support": {
+                "issues": "https://github.com/creatuity/magento2-interceptors/issues",
+                "source": "https://github.com/creatuity/magento2-interceptors/tree/1.3.8"
+            },
+            "time": "2026-04-28T12:41:31+00:00"
         },
         {
             "name": "doctrine/lexer",
