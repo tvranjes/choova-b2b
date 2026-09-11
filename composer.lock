@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3994f6fbd22e4b0a2b8b129fb8a6d31",
+    "content-hash": "15dfd3f771dea9eb2780d99ec7e0a1ef",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2634,6 +2634,43 @@
             ],
             "description": "Hyva Theme compatibility module for InchooDev_Company",
             "time": "2026-04-13T13:13:04+00:00"
+        },
+        {
+            "name": "inchoodev/module-product-fitment",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/productfitment.git",
+                "reference": "01d1523fd14ac88cdacd36762b974467c22b0687"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-product-fitment/inchoodev-module-product-fitment-1.0.3-ff0aec.tar",
+                "reference": "01d1523fd14ac88cdacd36762b974467c22b0687"
+            },
+            "require": {
+                "magento/framework": "*",
+                "php": "~8.2.0|~8.3.0|~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\ProductFitment\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "developer@inchoo.net",
+                    "homepage": "https://inchoo.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Inchoo Product Fitment",
+            "time": "2026-02-13T11:38:00+00:00"
         },
         {
             "name": "inchoodev/module-quick-order",

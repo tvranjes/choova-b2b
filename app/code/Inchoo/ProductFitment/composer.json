@@ -1,0 +1,21 @@
+{
+    "name": "inchoo/module-product-fitment",
+    "version": "1.0.0",
+    "description": "InchooDev_ProductFitment project specific modifications",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "inchoodev/module-product-fitment": "1.0.*"
+    },
+    "license": [
+        ""
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Inchoo\\ProductFitment\\": ""
+        }
+    }
+}

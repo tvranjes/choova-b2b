@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="InchooDev\ProductFitment\ViewModel\FitmentSelector">
+        <plugin name="inchoo_fitment_selector_category"
+                type="Inchoo\ProductFitment\Plugin\ViewModel\FitmentSelectorPlugin"/>
+    </type>
+    <type name="Smile\ElasticsuiteCatalog\Model\Layer\Filter\Item\Category">
+        <plugin name="inchoo_fitment_category_filter_item_url"
+                type="Inchoo\ProductFitment\Plugin\ElasticSuite\CategoryFilterItemPlugin"/>
+    </type>
+</config>
