@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fc1038065387a4dca3fd6392c1ac938",
+    "content-hash": "0efa46d2a289397671274c841343c0e5",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -5860,6 +5860,44 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-bundle-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-bundle-graph-ql-3.5.0.zip",
+                "shasum": "bdd4e77f6e0623513673c5966bd01b6acf75bf05"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-bundle": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-quote-graph-ql": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-sales-graph-ql": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-bundle-graph-ql": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\BundleGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-cache-invalidate",
             "version": "3.5.0",
             "dist": {
@@ -6347,6 +6385,45 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-catalog-url-rewrite-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-catalog-url-rewrite-graph-ql-3.5.0.zip",
+                "shasum": "398ba782712dab1a7c5831cbf2e91a48c8cf6e2c"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-url-rewrite-graph-ql": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-catalog-url-rewrite-graph-ql": "100.4.7"
+            },
+            "suggest": {
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-catalog-url-rewrite": "3.5.0",
+                "mage-os/module-url-rewrite-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\CatalogUrlRewriteGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-checkout",
             "version": "3.5.0",
             "dist": {
@@ -6594,6 +6671,43 @@
                 ],
                 "psr-4": {
                     "Magento\\ConfigurableProduct\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-configurable-product-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-configurable-product-graph-ql-3.5.0.zip",
+                "shasum": "718d3e022d6ecae84b78938356084616602c3f6c"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-catalog-inventory": "3.5.0",
+                "mage-os/module-configurable-product": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-quote-graph-ql": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-configurable-product-graph-ql": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ConfigurableProductGraphQl\\": ""
                 }
             },
             "license": [
@@ -7078,6 +7192,46 @@
                 ],
                 "psr-4": {
                     "Magento\\Downloadable\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-downloadable-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-downloadable-graph-ql-3.5.0.zip",
+                "shasum": "d51bdcae747451d3ff7efc748c303ed8294983e6"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-downloadable": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-quote-graph-ql": "3.5.0",
+                "mage-os/module-sales": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-downloadable-graph-ql": "100.4.9"
+            },
+            "suggest": {
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-sales-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\DownloadableGraphQl\\": ""
                 }
             },
             "license": [
@@ -7956,6 +8110,41 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-newsletter-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-newsletter-graph-ql-3.5.0.zip",
+                "shasum": "595e328d683f3143792bf34a5c9615c5ed10f1cb"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-customer": "3.5.0",
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-resolver-cache": "3.5.0",
+                "mage-os/module-newsletter": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-newsletter-graph-ql": "100.4.6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\NewsletterGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "Provides GraphQl functionality for the newsletter subscriptions."
+        },
+        {
             "name": "mage-os/module-open-search",
             "version": "3.5.0",
             "dist": {
@@ -8518,6 +8707,43 @@
                 ],
                 "psr-4": {
                     "Magento\\Review\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-review-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-review-graph-ql-3.5.0.zip",
+                "shasum": "a58d3d74fa1a8c85881d2dd78907504ffec31e2b"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-review": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-review-graph-ql": "100.4.5"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql": "3.5.0",
+                "mage-os/module-graph-ql-cache": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\ReviewGraphQl\\": ""
                 }
             },
             "license": [
@@ -9412,6 +9638,40 @@
             "description": "N/A"
         },
         {
+            "name": "mage-os/module-url-rewrite-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-url-rewrite-graph-ql-3.5.0.zip",
+                "shasum": "036928b1e3794a9cc959933844ce2746d459c489"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-url-rewrite": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-url-rewrite-graph-ql": "100.4.8"
+            },
+            "suggest": {
+                "mage-os/module-graph-ql": "3.5.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\UrlRewriteGraphQl\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
             "name": "mage-os/module-user",
             "version": "3.5.0",
             "dist": {
@@ -9670,6 +9930,42 @@
                 ],
                 "psr-4": {
                     "Magento\\Wishlist\\": ""
+                }
+            },
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "description": "N/A"
+        },
+        {
+            "name": "mage-os/module-wishlist-graph-ql",
+            "version": "3.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.mage-os.org/packages/mage-os/module-wishlist-graph-ql-3.5.0.zip",
+                "shasum": "0e7fcf8c036ea57b2d0b386db7e78ff6ed389eaa"
+            },
+            "require": {
+                "mage-os/framework": "3.5.0",
+                "mage-os/module-catalog": "3.5.0",
+                "mage-os/module-catalog-graph-ql": "3.5.0",
+                "mage-os/module-quote": "3.5.0",
+                "mage-os/module-quote-graph-ql": "3.5.0",
+                "mage-os/module-store": "3.5.0",
+                "mage-os/module-wishlist": "3.5.0",
+                "php": "~8.3.0||~8.4.0||~8.5.0"
+            },
+            "replace": {
+                "magento/module-wishlist-graph-ql": "100.4.9"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Magento\\WishlistGraphQl\\": ""
                 }
             },
             "license": [
@@ -12568,6 +12864,82 @@
                 "source": "https://github.com/Seldaek/signal-handler/tree/2.0.2"
             },
             "time": "2023-09-03T09:24:00+00:00"
+        },
+        {
+            "name": "spomky-labs/aes-key-wrap",
+            "version": "v7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Spomky-Labs/aes-key-wrap.git",
+                "reference": "fbeb834b1f83aa8fbdfbd4c12124f71d4c1606ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Spomky-Labs/aes-key-wrap/zipball/fbeb834b1f83aa8fbdfbd4c12124f71d4c1606ae",
+                "reference": "fbeb834b1f83aa8fbdfbd4c12124f71d4c1606ae",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.25.4",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-beberlei-assert": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/phpunit": "^9.0",
+                "rector/rector": "^0.12.5",
+                "symplify/easy-coding-standard": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AESKW\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florent Morselli",
+                    "homepage": "https://github.com/Spomky-Labs/aes-key-wrap/contributors"
+                }
+            ],
+            "description": "AES Key Wrap for PHP.",
+            "homepage": "https://github.com/Spomky-Labs/aes-key-wrap",
+            "keywords": [
+                "A128KW",
+                "A192KW",
+                "A256KW",
+                "RFC3394",
+                "RFC5649",
+                "aes",
+                "key",
+                "padding",
+                "wrap"
+            ],
+            "support": {
+                "issues": "https://github.com/Spomky-Labs/aes-key-wrap/issues",
+                "source": "https://github.com/Spomky-Labs/aes-key-wrap/tree/v7.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Spomky",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/FlorentMorselli",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-12-08T20:36:59+00:00"
         },
         {
             "name": "spomky-labs/pki-framework",
