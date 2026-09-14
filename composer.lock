@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3994f6fbd22e4b0a2b8b129fb8a6d31",
+    "content-hash": "c6d83dd77f3a264daddbf6f7cbfd9734",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2399,6 +2399,45 @@
             "time": "2026-09-11T11:09:47+00:00"
         },
         {
+            "name": "inchoo/language-hr_hr",
+            "version": "1.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/m2-croatian-translate.git",
+                "reference": "7bb1d271b0fe438a2025842cb0675bdf1f13cc1b"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoo/language-hr_hr/inchoo-language-hr_hr-1.2.8-b0025f.tar",
+                "reference": "7bb1d271b0fe438a2025842cb0675bdf1f13cc1b"
+            },
+            "require": {
+                "magento/framework": "~100.0.0||~101.0.0||~102.0.0||~103.0.0"
+            },
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Inchoo team",
+                    "email": "inquire@inchoo.net",
+                    "homepage": "http://inchoo.net/"
+                }
+            ],
+            "description": "Croatian (Hrvatski) language pack for Magento2",
+            "keywords": [
+                "magento2",
+                "translation"
+            ],
+            "time": "2026-03-09T12:30:27+00:00"
+        },
+        {
             "name": "inchoo/module-layout-reset",
             "version": "0.1.0",
             "source": {
@@ -2634,6 +2673,43 @@
             ],
             "description": "Hyva Theme compatibility module for InchooDev_Company",
             "time": "2026-04-13T13:13:04+00:00"
+        },
+        {
+            "name": "inchoodev/module-product-fitment",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/productfitment.git",
+                "reference": "01d1523fd14ac88cdacd36762b974467c22b0687"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-product-fitment/inchoodev-module-product-fitment-1.0.3-ff0aec.tar",
+                "reference": "01d1523fd14ac88cdacd36762b974467c22b0687"
+            },
+            "require": {
+                "magento/framework": "*",
+                "php": "~8.2.0|~8.3.0|~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\ProductFitment\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Inchoo",
+                    "email": "developer@inchoo.net",
+                    "homepage": "https://inchoo.net/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Inchoo Product Fitment",
+            "time": "2026-02-13T11:38:00+00:00"
         },
         {
             "name": "inchoodev/module-quick-order",

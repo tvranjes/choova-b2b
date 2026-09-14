@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="inchoo_fitment_selector_category" remove="true"/>
+        <referenceBlock name="inchoo_fitment_selector" template="Inchoo_ProductFitment::hyva/fitment/selector.phtml"/>
+        <move element="inchoo_fitment_selector" destination="sidebar.main" before="catalog.leftnav"/>
+    </body>
+</page>

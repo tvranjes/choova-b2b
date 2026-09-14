@@ -1,0 +1,209 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Hyva\Theme\Model\ViewModelRegistry $viewModels */
+
+$selectorViewModel = $viewModels->require(\InchooDev\ProductFitment\ViewModel\FitmentSelector::class); // phpcs:ignore
+
+$fitmentIds = $block->getData('fitment_ids') ?: []; // from filter faceted data
+$configData = $selectorViewModel->getDataByIds($fitmentIds);
+$initSelectFunctionName = 'initSelect' . sha1($block->getNameInLayout());
+$isHorizontal = $block->getData('layout') === 'horizontal';
+?>
+
+<?php if ($configData['fitments'] ?? []): ?>
+    <?php if ($isHorizontal): ?><div class="container py-4"><?php endif; ?>
+    <div x-data="<?= /** @noEscape */ $initSelectFunctionName ?>()"
+         class="grid grid-cols-1 <?= $isHorizontal ? 'gap-2 lg:grid-cols-4 lg:gap-4' : 'gap-4 mb-4' ?>">
+        <template x-for="(attribute, index) in fitmentOptionAttributes" :key="index">
+            <div>
+                <select :id="attribute.attributeCode" x-model="selectedValues[attribute.attributeCode]"
+                        :disabled="index > 0 && !selectedValues[getAttributeCode(index - 1)]"
+                        class="w-full form-select">
+                    <option value="" x-text="attribute.attributeLabel"></option>
+                    <template x-for="option in computedOptions(attribute.attributeCode)" :key="option.value">
+                        <option :value="option.value" x-text="option.label"></option>
+                    </template>
+                </select>
+            </div>
+        </template>
+
+        <?php if ($selectorViewModel->canShowClearButton()): ?>
+            <button @click="clearButton"
+                    class="btn"><?= $escaper->escapeHtml(__('Clear')) ?></button>
+        <?php endif; ?>
+
+        <button @click="searchButton" x-bind:disabled="isSearchButtonDisabled()"
+                class="btn btn-primary"><?= $escaper->escapeHtml(__('Search')) ?></button>
+    </div>
+    <?php if ($isHorizontal): ?></div><?php endif; ?>
+
+    <script><?php // phpcs:ignore ?>
+        function <?= /** @noEscape */ $initSelectFunctionName ?>() {
+            const configData = <?= /** @noEscape */ $selectorViewModel->toJson($configData) ?>;
+            const cookieFitmentId = hyva.getCookie('selectedFitment');
+            const cookieFitment = cookieFitmentId
+                ? configData.fitments.find(fitment => fitment.entity_id === Number(cookieFitmentId))
+                : null;
+
+            // init preselected options from the "selectedFitment" cookie
+            if (!!cookieFitment
+                && !configData.isFitmentPage
+                && !configData.isProductListing
+                && Object.keys(configData.preselectedOptionIds).length === 0
+            ) {
+                configData.fitmentOptionAttributeCodes.forEach(attributeCode => {
+                    if (cookieFitment[attributeCode]) {
+                        configData.preselectedOptionIds[attributeCode] = cookieFitment[attributeCode];
+                    }
+                });
+            }
+
+            return {
+                fitments: configData.fitments,
+                fitmentOptionAttributes: configData.fitmentOptionAttributes,
+                fitmentOptionAttributeCodes: configData.fitmentOptionAttributeCodes,
+                preselectedOptionIds: configData.preselectedOptionIds,
+                isFitmentPage: configData.isFitmentPage,
+                isProductListing: configData.isProductListing,
+                isAllowedPartialSearch: configData.isAllowedPartialSearch,
+                fitmentUrlSuffix: configData.fitmentUrlSuffix,
+                baseUrl: '<?= /** @noEscape */ $block->getBaseUrl() ?>',
+
+                selectedValues: {},
+
+                getAttributeCode(index) {
+                    const fitmentOptionAttr = this.fitmentOptionAttributes[index];
+                    return fitmentOptionAttr ? fitmentOptionAttr.attributeCode : null;
+                },
+
+                getIndex(attributeCode) {
+                    const index = this.fitmentOptionAttributes.findIndex(
+                        option => option.attributeCode === attributeCode
+                    );
+
+                    return index !== -1 ? index : null;
+                },
+
+                getAllOptions(attributeCode) {
+                    const fitmentOptionAttr = this.fitmentOptionAttributes.find(
+                        option => option.attributeCode === attributeCode
+                    );
+                    return fitmentOptionAttr ? fitmentOptionAttr.options : [];
+                },
+
+                computedOptions(attributeCode) {
+                    const index = this.getIndex(attributeCode);
+
+                    if (index === null) {
+                        return [];
+                    }
+
+                    this.selectedValues[attributeCode] = ''; // reset select
+
+                    let prevIndex = index - 1,
+                        prevAttributeCode = this.getAttributeCode(prevIndex),
+                        allowedFitments = this.fitments;
+
+                    // filter allowed fitments based on previously selected options
+                    while (prevAttributeCode) {
+                        const prevSelectedValue = this.selectedValues[prevAttributeCode];
+                        if (!prevSelectedValue) {
+                            return [];
+                        }
+
+                        allowedFitments = allowedFitments.filter(
+                            fitment => fitment[prevAttributeCode] === Number(prevSelectedValue)
+                        );
+                        prevAttributeCode = this.getAttributeCode(--prevIndex);
+                    }
+
+                    // preselect option
+                    if (this.preselectedOptionIds[attributeCode]) {
+                        this.selectedValues[attributeCode] = this.preselectedOptionIds[attributeCode];
+                        delete this.preselectedOptionIds[attributeCode]; // only once
+                    }
+
+                    let allowedValues = allowedFitments.map(fitment => fitment[attributeCode]);
+
+                    return this.getAllOptions(attributeCode).filter(
+                        option => allowedValues.includes(option.value)
+                    );
+                },
+
+                isSearchButtonDisabled() {
+                    if (this.isAllowedPartialSearch) {
+                        return Object.values(this.selectedValues).every(value => !value);
+                    }
+
+                    return Object.values(this.selectedValues).some(value => !value);
+                },
+
+                searchButton() {
+                    let selectedFitments = this.fitments;
+                    let urlKeys = [];
+                    let params = {};
+
+                    this.fitmentOptionAttributeCodes.forEach(attributeCode => {
+                        const optionId = this.selectedValues[attributeCode]
+                            ? Number(this.selectedValues[attributeCode])
+                            : null;
+
+                        params[attributeCode] = null;
+
+                        if (!optionId) {
+                            return;
+                        }
+
+                        const attributeOption = this.getAllOptions(attributeCode).find(
+                            option => option.value === optionId
+                        );
+
+                        if (attributeOption) {
+                            urlKeys.push(attributeOption.urlKey)
+                            params[attributeCode] = attributeOption.urlKey;
+                            selectedFitments = selectedFitments.filter(
+                                fitment => fitment[attributeCode] === optionId
+                            );
+                        }
+                    });
+
+                    // selectedFitment cookie
+                    if (Object.keys(selectedFitments).length === 1 // only if one fitment is selected
+                        && this.fitmentOptionAttributeCodes.length === urlKeys.length // only if all options are selected
+                    ) {
+                        hyva.setCookie('selectedFitment', selectedFitments[0].entity_id);
+                    }
+
+                    const url = new URL(window.location.href);
+
+                    if (!this.isFitmentPage && this.isProductListing) {
+                        url.searchParams.delete('p'); // exclude current page from urls
+
+                        Object.entries(params).forEach(([key, value]) => {
+                            if (value) {
+                                url.searchParams.set(key, value);
+                            } else {
+                                url.searchParams.delete(key);
+                            }
+                        });
+                    } else {
+                        url.href = this.baseUrl + Object.values(urlKeys).join('/') + this.fitmentUrlSuffix;
+                    }
+
+                    window.location.href = url.toString();
+                },
+
+                clearButton() {
+                    const url = new URL(window.location.href);
+
+                    this.fitmentOptionAttributeCodes.forEach(attributeCode => {
+                        url.searchParams.delete(attributeCode);
+                    });
+
+                    window.location.href = url.toString();
+                }
+            };
+        }
+    </script>
+<?php endif; ?>

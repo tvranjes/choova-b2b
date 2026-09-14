@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="InchooDev\ProductFitment\Setup\Patch\Data\AddFitmentProductAttribute">
+        <arguments>
+            <argument name="attributeCode" xsi:type="string">fitment</argument>
+            <argument name="attributeLabel" xsi:type="string">Fitment</argument>
+            <argument name="groupLabel" xsi:type="string">Product Fitments</argument>
+            <argument name="skipApply" xsi:type="boolean">false</argument>
+        </arguments>
+    </type>
+    <type name="InchooDev\ProductFitment\Setup\Patch\Data\AddFitmentOptionProductAttributes">
+        <arguments>
+            <argument name="attributes" xsi:type="array">
+                <item name="make" xsi:type="string">Make</item>
+                <item name="model" xsi:type="string">Model</item>
+                <item name="engine" xsi:type="string">Engine</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
