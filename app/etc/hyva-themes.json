@@ -13,6 +13,12 @@
             "src": "vendor/magewirephp/magewire/src"
         },
         {
+            "src": "vendor/inchoodev/module-purchase-order"
+        },
+        {
+            "src": "vendor/inchoodev/module-purchase-order-rule"
+        },
+        {
             "src": "vendor/inchoodev/module-quick-order"
         },
         {

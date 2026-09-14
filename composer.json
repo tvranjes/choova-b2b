@@ -25,6 +25,7 @@
     "inchoodev/module-company-requisition-list-sharing": "^1.0",
     "inchoodev/module-hyva-theme-company": "^1.2",
     "inchoodev/module-product-fitment": "^1.0",
+    "inchoodev/module-purchase-order-rule": "^1.0",
     "inchoodev/module-quick-order": "^1.4",
     "inchoodev/module-shared-catalog": "^1.0",
     "laminas/laminas-view": "^2.44",

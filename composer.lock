@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6d83dd77f3a264daddbf6f7cbfd9734",
+    "content-hash": "4f47dc64f4e97cb7407756e012ae3490",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.394.12",
+            "version": "3.395.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "23b24609e38ba51f872c01385f85a8bd12e917d7"
+                "reference": "f5eda89b1f2ecd4aea56eb04d58874bad12ef02e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/23b24609e38ba51f872c01385f85a8bd12e917d7",
-                "reference": "23b24609e38ba51f872c01385f85a8bd12e917d7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f5eda89b1f2ecd4aea56eb04d58874bad12ef02e",
+                "reference": "f5eda89b1f2ecd4aea56eb04d58874bad12ef02e",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.394.12"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.395.1"
             },
-            "time": "2026-09-10T18:07:33+00:00"
+            "time": "2026-09-13T18:43:19+00:00"
         },
         {
             "name": "brick/math",
@@ -2572,17 +2572,52 @@
             "time": "2026-09-09T10:43:50+00:00"
         },
         {
-            "name": "inchoodev/module-company-quote-request",
+            "name": "inchoodev/module-company-credit",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companyquoterequest.git",
-                "reference": "b03be6b36d8ef3c902277af6fddbcb5061ac21ad"
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companycredit.git",
+                "reference": "926554f167601612108edd168a7d9f790623d716"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-quote-request/inchoodev-module-company-quote-request-1.0.0-5f690c.tar",
-                "reference": "b03be6b36d8ef3c902277af6fddbcb5061ac21ad"
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-credit/inchoodev-module-company-credit-1.0.0-465bc8.tar",
+                "reference": "926554f167601612108edd168a7d9f790623d716"
+            },
+            "require": {
+                "inchoodev/module-company": "*",
+                "magento/framework": "*",
+                "magento/module-checkout": "*",
+                "magento/module-payment": "*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\CompanyCredit\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "B2B Company Credit payment method module for Magento 2",
+            "time": "2026-02-26T07:20:45+00:00"
+        },
+        {
+            "name": "inchoodev/module-company-quote-request",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companyquoterequest.git",
+                "reference": "ec2394e6d9c56655f7c0bdfc1855f83fe54f02a4"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-quote-request/inchoodev-module-company-quote-request-1.0.1-a6fee9.tar",
+                "reference": "ec2394e6d9c56655f7c0bdfc1855f83fe54f02a4"
             },
             "require": {
                 "inchoodev/module-company": "*",
@@ -2603,20 +2638,20 @@
                 "Proprietary"
             ],
             "description": "Adds company-account gating and per-company configuration to InchooDev_QuoteRequest.",
-            "time": "2026-07-02T11:54:17+00:00"
+            "time": "2026-09-14T08:05:29+00:00"
         },
         {
             "name": "inchoodev/module-company-requisition-list-sharing",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_companyrequisitionlistsharing.git",
-                "reference": "d99ce0a16862ab6ac74a435baa539e441b445226"
+                "reference": "48cf28dade95e7dbeb3eb8ccbdfd55c08b80ff88"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-requisition-list-sharing/inchoodev-module-company-requisition-list-sharing-1.0.1-cc254e.tar",
-                "reference": "d99ce0a16862ab6ac74a435baa539e441b445226"
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-company-requisition-list-sharing/inchoodev-module-company-requisition-list-sharing-1.0.2-99cc5d.tar",
+                "reference": "48cf28dade95e7dbeb3eb8ccbdfd55c08b80ff88"
             },
             "require": {
                 "inchoodev/module-company": "*",
@@ -2639,7 +2674,7 @@
                 "proprietary"
             ],
             "description": "B2B bridge module to share requisition lists with members of the current customer's company",
-            "time": "2026-06-25T10:18:31+00:00"
+            "time": "2026-09-14T07:00:28+00:00"
         },
         {
             "name": "inchoodev/module-hyva-theme-company",
@@ -2710,6 +2745,99 @@
             ],
             "description": "Inchoo Product Fitment",
             "time": "2026-02-13T11:38:00+00:00"
+        },
+        {
+            "name": "inchoodev/module-purchase-order",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_purchaseorder.git",
+                "reference": "15adc504f0ca50114aa9d9ceca7c15657b4a294f"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-purchase-order/inchoodev-module-purchase-order-1.0.0-6e700a.tar",
+                "reference": "15adc504f0ca50114aa9d9ceca7c15657b4a294f"
+            },
+            "require": {
+                "inchoodev/module-company": "^1.2",
+                "inchoodev/module-company-credit": "^1.0",
+                "magento/framework": "103.0.*",
+                "magento/framework-message-queue": "100.4.*",
+                "magento/module-authorization": "100.4.*",
+                "magento/module-catalog": "104.0.*",
+                "magento/module-checkout": "100.4.*",
+                "magento/module-customer": "103.0.*",
+                "magento/module-directory": "100.4.*",
+                "magento/module-msrp": "100.4.*",
+                "magento/module-payment": "100.4.*",
+                "magento/module-quote": "101.2.*",
+                "magento/module-sales": "103.0.*",
+                "magento/module-sales-sequence": "100.4.*",
+                "magento/module-store": "101.1.*",
+                "magento/module-tax": "100.4.*",
+                "magento/module-theme": "101.1.*",
+                "magento/module-ui": "101.2.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\PurchaseOrder\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "B2B Purchase Order approval workflow module for Magento 2",
+            "time": "2026-09-14T06:27:08+00:00"
+        },
+        {
+            "name": "inchoodev/module-purchase-order-rule",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.inchoo4u.net/M2-modules/inchoodev_purchaseorderrule.git",
+                "reference": "644a55db6b2af58cf6c24838c60beb8d26c7124c"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://composer.inchoo.io/dist/inchoodev/module-purchase-order-rule/inchoodev-module-purchase-order-rule-1.0.0-3877a3.tar",
+                "reference": "644a55db6b2af58cf6c24838c60beb8d26c7124c"
+            },
+            "require": {
+                "inchoodev/module-company": "^1.2",
+                "inchoodev/module-purchase-order": "^1.0",
+                "magento/framework": "103.0.*",
+                "magento/framework-message-queue": "100.4.*",
+                "magento/module-customer": "103.0.*",
+                "magento/module-directory": "100.4.*",
+                "magento/module-payment": "100.4.*",
+                "magento/module-quote": "101.2.*",
+                "magento/module-rule": "100.4.*",
+                "magento/module-sales-rule": "101.2.*",
+                "magento/module-shipping": "100.4.*",
+                "magento/module-theme": "101.1.*",
+                "magento/module-ui": "101.2.*",
+                "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "InchooDev\\PurchaseOrderRule\\": ""
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "description": "B2B Purchase Order approval rules module for Magento 2",
+            "time": "2026-09-14T06:31:11+00:00"
         },
         {
             "name": "inchoodev/module-quick-order",
@@ -11352,16 +11480,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.8.0",
+            "version": "v5.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "044a6a392ff8ad0d61f14370a5fbbd0a0107152f"
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/044a6a392ff8ad0d61f14370a5fbbd0a0107152f",
-                "reference": "044a6a392ff8ad0d61f14370a5fbbd0a0107152f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/9e33da9553fe7786f0962b35f4e4ecf01be89def",
+                "reference": "9e33da9553fe7786f0962b35f4e4ecf01be89def",
                 "shasum": ""
             },
             "require": {
@@ -11403,9 +11531,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.8.0"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.9.0"
             },
-            "time": "2026-07-04T14:30:18+00:00"
+            "time": "2026-09-13T18:51:52+00:00"
         },
         {
             "name": "open-telemetry/api",
@@ -13742,20 +13870,20 @@
         },
         {
             "name": "spomky-labs/pki-framework",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Spomky-Labs/pki-framework.git",
-                "reference": "8f333bebe104ea24f1a160a6fb69e2dead4f1882"
+                "reference": "792e909d4e387adffe3c4f404451c7d57a3d2022"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Spomky-Labs/pki-framework/zipball/8f333bebe104ea24f1a160a6fb69e2dead4f1882",
-                "reference": "8f333bebe104ea24f1a160a6fb69e2dead4f1882",
+                "url": "https://api.github.com/repos/Spomky-Labs/pki-framework/zipball/792e909d4e387adffe3c4f404451c7d57a3d2022",
+                "reference": "792e909d4e387adffe3c4f404451c7d57a3d2022",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.10|^0.11|^0.12|^0.13|^0.14|^0.15|^0.16|^0.17|^0.18|^0.19|^0.20",
+                "brick/math": "^0.10|^0.11|^0.12|^0.13|^0.14|^0.15|^0.16|^0.17|^0.18|^0.19|^0.20|^1.0",
                 "ext-mbstring": "*",
                 "php": ">=8.1"
             },
@@ -13836,7 +13964,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Spomky-Labs/pki-framework/issues",
-                "source": "https://github.com/Spomky-Labs/pki-framework/tree/1.6.2"
+                "source": "https://github.com/Spomky-Labs/pki-framework/tree/1.6.3"
             },
             "funding": [
                 {
@@ -13848,7 +13976,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-09-08T07:15:08+00:00"
+            "time": "2026-09-12T19:02:49+00:00"
         },
         {
             "name": "stomp-php/stomp-php",
@@ -17169,20 +17297,20 @@
         },
         {
             "name": "web-token/jwt-framework",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-framework.git",
-                "reference": "e5b5ee2be1dcb7a279875aade11ffe8dfae2368d"
+                "reference": "791788dad09abaefb7da8f699f29cefec3f31276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-framework/zipball/e5b5ee2be1dcb7a279875aade11ffe8dfae2368d",
-                "reference": "e5b5ee2be1dcb7a279875aade11ffe8dfae2368d",
+                "url": "https://api.github.com/repos/web-token/jwt-framework/zipball/791788dad09abaefb7da8f699f29cefec3f31276",
+                "reference": "791788dad09abaefb7da8f699f29cefec3f31276",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.12|^0.13|^0.14|^0.15|^0.16|^0.17|^0.18|^0.19|^0.20",
+                "brick/math": "^0.12|^0.13|^0.14|^0.15|^0.16|^0.17|^0.18|^0.19|^0.20|^1.0",
                 "ext-openssl": "*",
                 "php": ">=8.2",
                 "psr/clock": "^1.0",
@@ -17271,7 +17399,7 @@
             ],
             "support": {
                 "issues": "https://github.com/web-token/jwt-framework/issues",
-                "source": "https://github.com/web-token/jwt-framework/tree/4.2.2"
+                "source": "https://github.com/web-token/jwt-framework/tree/4.2.3"
             },
             "funding": [
                 {
@@ -17283,7 +17411,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-08-30T13:53:36+00:00"
+            "time": "2026-09-12T18:50:35+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -19654,12 +19782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pdepend/pdepend.git",
-                "reference": "0c8242a88ed4906aabe08b682e5b47fdd3612b06"
+                "reference": "d9f193a9f8457fd8c05cb4478216f3da606449da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/0c8242a88ed4906aabe08b682e5b47fdd3612b06",
-                "reference": "0c8242a88ed4906aabe08b682e5b47fdd3612b06",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/d9f193a9f8457fd8c05cb4478216f3da606449da",
+                "reference": "d9f193a9f8457fd8c05cb4478216f3da606449da",
                 "shasum": ""
             },
             "require": {
@@ -19721,7 +19849,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-07T20:59:47+00:00"
+            "time": "2026-09-12T09:27:40+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -20181,12 +20309,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "f51730d323b66b713a6bc5b579a3c38a44beae53"
+                "reference": "d51126b1f4c17a1053e629509913b1597b8dc8a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/f51730d323b66b713a6bc5b579a3c38a44beae53",
-                "reference": "f51730d323b66b713a6bc5b579a3c38a44beae53",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/d51126b1f4c17a1053e629509913b1597b8dc8a6",
+                "reference": "d51126b1f4c17a1053e629509913b1597b8dc8a6",
                 "shasum": ""
             },
             "require": {
@@ -20262,7 +20390,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-08T07:37:55+00:00"
+            "time": "2026-09-14T07:55:44+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
